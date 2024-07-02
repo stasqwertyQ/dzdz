@@ -114,22 +114,22 @@ function closeModal() {
   document.removeEventListener('keydown', handleKeyPress);
 }
 
-// Функція для обробки натискань клавіш
+
 function handleKeyPress(event) {
   switch (event.key) {
     case 'Escape':
       closeModal();
       break;
     case 'ArrowRight':
-      navigate(1); // Перегортання вправо
+      navigate(1);
       break;
     case 'ArrowLeft':
-      navigate(-1); // Перегортання вліво
+      navigate(-1); 
       break;
   }
 }
 
-// Функція для перегортання зображень у модальному вікні
+
 function navigate(direction) {
   const currentIndex = galleryItems.findIndex(
     (item) => item.original === lightboxImage.src
